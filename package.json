@@ -1,0 +1,39 @@
+{
+  "name": "ts-node-boilerplate",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "author": "Durrani",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "debug": "node --inspect=5858 -r ts-node/register ./src/index.ts",
+    "start": "nodemon",
+    "build": "webpack",
+    "serve": "node ./dist/index.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "npm run debug",
+    "ext": "ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.3",
+    "ts-loader": "^7.0.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^8.9.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
