@@ -22,7 +22,10 @@ to launch the production build of the app using `node ./dist/index.js`
 
 - improvements are highly encourged
 - don't forget to star the repo
+- if you want to use `webpack watch` or `dev-server` instead of `nodemon` then [visit here](https://webpack.js.org/guides/development/)
 
 ## thanks
 
-[Juan Sanchez](https://medium.com/create-a-server-with-nodemon-express-typescript/create-a-server-with-nodemon-express-typescript-f7c88fb5ee71)
+[Juan Sanchez](https://medium.com/create-a-server-with-nodemon-express-typescript/create-a-server-with-nodemon-express-typescript-f7c88fb5ee71) -- for the Medium Article
+
+[webpack](https://webpack.js.org/guides/typescript/) -- for the official docs

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "./src/index.ts",
   "author": "Durrani",
-  "license": "GPL-3.0-or-later",
   "scripts": {
     "debug": "node --inspect=5858 -r ts-node/register ./src/index.ts",
     "start": "nodemon",
