@@ -1,6 +1,6 @@
-# ts-node-boilerplate
+# type-graphql-play
 
-TypeScript Node boiler-plate with webpack build, nodemon and VS Code debugger
+TypeScript Node type-graphql with webpack build, nodemon and VS Code debugger
 
 ## `npm install`
 

@@ -1,3 +1,5 @@
+import "reflect-metadata";
+
 import localModule from "./localModule";
 
 setTimeout(() => {
