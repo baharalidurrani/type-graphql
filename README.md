@@ -20,7 +20,7 @@ to launch the production build of the app using `node ./dist/index.js`
 
 ## more
 
-- improvements are highly encourged
+- improvements are highly appreciated
 - don't forget to star the repo
 - if you want to use `webpack watch` or `dev-server` instead of `nodemon` then [visit here](https://webpack.js.org/guides/development/)
 
