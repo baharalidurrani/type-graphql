@@ -4,7 +4,8 @@
   "main": "./src/index.ts",
   "author": "Durrani",
   "scripts": {
-    "start": "ts-node-dev --respawn --inspect=5858 ./src/index.ts",
+    "start": "ts-node-dev --respawn ./src/index.ts",
+    "debug": "ts-node-dev --respawn --inspect=5858 ./src/index.ts",
     "build": "tsc",
     "serve": "node ./dist/index.js"
   },
