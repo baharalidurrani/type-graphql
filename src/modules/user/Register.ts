@@ -6,7 +6,7 @@ import {
   FieldResolver,
   Root,
 } from "type-graphql";
-import * as bcrypt from "bcryptjs";
+import bcrypt from "bcryptjs";
 import { User } from "../../entity/User";
 
 @Resolver(User)
