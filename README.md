@@ -1,6 +1,6 @@
 # type-graphql-play
 
-TypeScript Node type-graphql with webpack build, nodemon and VS Code debugger
+TypeScript, Node, type-graphql, ts-node-dev and VS Code debugger
 
 ## `npm install`
 
@@ -8,11 +8,16 @@ to install the dependencies
 
 ## `npm start`
 
-to start the app with `nodemon` and debugger attached
+to start the app with `ts-node-dev` or `tsnd` alias
+much faster that `nodemon`
+
+## `npm run debug`
+
+to start the app with `ts-node-dev` and debugger attached
 
 ## `npm run build`
 
-to build everything inside the `src/` folder and output a single `dist/index.js` file
+to build everything inside the `src/` folder and output JS files to `dist/` folder
 
 ## `npm run serve`
 
@@ -22,10 +27,5 @@ to launch the production build of the app using `node ./dist/index.js`
 
 - improvements are highly appreciated
 - don't forget to star the repo
-- if you want to use `webpack watch` or `dev-server` instead of `nodemon` then [visit here](https://webpack.js.org/guides/development/)
 
 ## thanks
-
-[Juan Sanchez](https://medium.com/create-a-server-with-nodemon-express-typescript/create-a-server-with-nodemon-express-typescript-f7c88fb5ee71) -- for the Medium Article
-
-[webpack](https://webpack.js.org/guides/typescript/) -- for the official docs
