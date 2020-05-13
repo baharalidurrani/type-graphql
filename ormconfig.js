@@ -1,3 +1,6 @@
+// const path = require("path");
+// entities: [path.join(__dirname, "database/models/*{.ts,.js}")],
+
 console.log(
   "process.env.NODE_ENV",
   process.env.NODE_ENV || "undefined-production"
@@ -18,5 +21,5 @@ module.exports = {
   database: "qxpmjubd",
   synchronize: true,
   logging: true,
-  entities: [root + "entity/*." + file],
+  entities: [root + "entity/*." + file]
 };
