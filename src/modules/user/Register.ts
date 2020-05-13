@@ -11,6 +11,11 @@ export class RegisterResolver {
     return "Hello World";
   }
 
+  @Query(() => User)
+  async getByEmail(@Arg("email") email: string) {
+    return await User.findOne({ email: email });
+  }
+
   @Mutation(() => User)
   async register(
     @Arg("data") { email, firstName, lastName, password }: RegisterInput
@@ -20,7 +25,7 @@ export class RegisterResolver {
       firstName,
       lastName,
       email,
-      password: hashedPassword,
+      password: hashedPassword
     }).save();
     console.log("create user", user);
     return user;
