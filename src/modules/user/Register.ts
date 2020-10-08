@@ -1,4 +1,13 @@
-import { Resolver, Query, Mutation, Arg } from "type-graphql";
+import {
+  Resolver,
+  Query,
+  Mutation,
+  Arg,
+  Subscription,
+  Root,
+  PubSub,
+  PubSubEngine
+} from "type-graphql";
 import bcrypt from "bcryptjs";
 import { User } from "../../entity/User";
 import { RegisterInput } from "./register/RegisterInput";
@@ -7,7 +16,7 @@ import { RegisterInput } from "./register/RegisterInput";
 export class RegisterResolver {
   // the second parm {} is optional tweaking
   @Query(() => String)
-  async hello() {
+  async hello(@PubSub() pb: PubSubEngine) {
     return "Hello World";
   }
 
@@ -29,5 +38,17 @@ export class RegisterResolver {
     }).save();
     console.log("create user", user);
     return user;
+  }
+
+  @Subscription(() => String, {
+    topics: "NOTIFY",
+    filter: ({ payload, args }) => payload.includes(args.id)
+  })
+  async mySub(
+    @Root() payload: string,
+    @Arg("id", type => String)
+    id: string = ""
+  ) {
+    return payload;
   }
 }
